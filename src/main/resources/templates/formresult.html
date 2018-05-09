@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <!--<meta charset="UTF-8">-->
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>Spring Form</title>
+    <style>
+        .main {
+            width: 400px;
+            height: 200px;
+            margin-left: auto;
+            margin-right: auto;
+            background: aquamarine;
+            border-radius: 20px;
+        }
+
+        .resulttext {
+            display: table;
+            margin: auto;
+            position: relative;
+            top: 50%;
+            transform: translateY(-50%);
+            font-family: Arial;
+            font-style: italic;
+        }
+
+        p {
+            text-align: center;
+        }
+
+        .hyperlink {
+            text-align: center;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    </style>
+</head>
+<body>
+<div class="main">
+    <div class="resulttext">
+        <p>You have entered:</p>
+        <p th:text="${class1.value}" />
+    </div>
+</div>
+<br>
+<div class="hyperlink">
+    <a href="/formpage">Submit something else</a>
+</div>
+</body>
+</html>
